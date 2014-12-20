@@ -1,0 +1,6 @@
+histring (1.1.1-1) unstable; urgency=low
+
+  * Debianized upstream from scratch
+  * Official Debian release (closes: #759166).
+
+ -- Tong Sun <suntong001@users.sourceforge.net>  Sat, 20 Dec 2014 13:36:32 -0500
