@@ -1,0 +1,55 @@
+.TH HISTRING 1
+.SH NAME
+histring \- highlight strings using ANSI terminal escape sequences
+.SH SYNOPSIS
+.B histring
+.RI "[ options ] <pattern> [file]..."
+.SH DESCRIPTION
+This manual page documents briefly the
+.B histring
+command.
+.PP
+\fBhistring\fP is a program that highlights strings using ANSI terminal escape codes.
+.SH OPTIONS
+histring supports the following options:
+.TP
+.B \-\-help
+Show summary of options.
+.TP
+.B \-\-version
+Show version of program.
+.TP
+.B \-c, \-\-color <name|number>
+Color to highlight in.
+.TP
+.B \-s, \-\-style <name>
+Style to apply to highlight, if any styles are used then the color will not be implicitly bolded, you must bold it your self.
+.TP
+.B \-E, \-\-extended
+Use extended regular expressions.
+.TP
+.B \-f, \-\-force
+Force hilighting even if stdout is not a tty.
+.TP
+.B \-i, \-\-ignore-case
+Ignore case distinctions.
+.TP
+.B \-\-debug
+Print debugging info.
+.TP
+.B \-\-credits
+Print the credits and exit.
+.SH USAGE EXAMPLES
+.TP
+.B zip -T *.zip 2>&1 | histring -fEi 'warning |bad CRC|error: '
+Highlight warnings and errors when testing the integrity of zip files.
+.TP
+.B hg diff | histring -fE '^Comparing files .*|^diff .*' | histring -c yellow -fE '^\-.*' | histring -c green -fE '^\+.*'
+Highlight interesting stuff from diff output.
+.SH SEE ALSO
+.BR glark (1).
+.SH AUTHOR
+histring was written by Angus Mackay <amackay@gusnet.cx>.
+.PP
+This manual page was written by Michael Prokop <mika@grml.org>
+for the grml project (but may be used by others).
