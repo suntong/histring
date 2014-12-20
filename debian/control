@@ -1,9 +1,9 @@
 Source: histring
 Section: utils
 Priority: extra
-Maintainer: Michael Prokop <mika@grml.org>
+Maintainer: Tong Sun <suntong001@users.sourceforge.net>
 Build-Depends: debhelper (>= 9), autotools-dev
-Standards-Version: 3.7.2
+Standards-Version: 3.9.6
 
 Package: histring
 Architecture: any
