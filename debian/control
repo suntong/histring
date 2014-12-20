@@ -4,6 +4,9 @@ Priority: extra
 Maintainer: Tong Sun <suntong001@users.sourceforge.net>
 Build-Depends: debhelper (>= 9), autotools-dev
 Standards-Version: 3.9.6
+Homepage: https://github.com/suntong001/histring
+Vcs-Git: https://github.com/suntong001/histring.git
+Vcs-Browser: https://github.com/suntong001/histring
 
 Package: histring
 Architecture: any
