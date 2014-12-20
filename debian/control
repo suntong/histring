@@ -10,4 +10,6 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: highlight strings using ANSI terminal escape sequences
  histring simply highlights strings using ANSI terminal escape codes.
- It is very useful for example for parsing output of grep and diff.
+ It is a general purpose highlighting tool that works with arbitrary
+ input text file, and highlight different keywords in different colours.
+ Very useful for any kind of text logs, or outputs like grep, diff, etc.
