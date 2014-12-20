@@ -6,4 +6,4 @@
 	dh $@ 
 
 clean:
-	rm -rf config.log config.cache config.h config.status stamp-h Makefile histring *.o core *.core debian/histring.debhelper.log debian/histring.substvars debian/histring/
+	rm -rf config.log config.cache config.h config.status stamp-h Makefile histring *.o core *.core debian/histring.debhelper.log debian/histring.substvars debian/files debian/histring/
