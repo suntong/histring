@@ -1,6 +1,6 @@
 Source: histring
 Section: utils
-Priority: extra
+Priority: optional
 Maintainer: Tong Sun <suntong001@users.sourceforge.net>
 Build-Depends: debhelper (>= 9), autotools-dev
 Standards-Version: 3.9.6
