@@ -86,7 +86,7 @@ int options;
 
 /*
  * this takes a regular expression string and does vt100 based
- * hilighting on a file stream
+ * highlighting on a file stream
  */
 int histring(char *regs, FILE *in, FILE *out)
 {
@@ -178,15 +178,15 @@ int cat(char *regs, FILE *in, FILE *out)
 }
 
 
-void print_useage( void )
+void print_usage( void )
 {
-  fprintf(stdout, "useage: ");
+  fprintf(stdout, "usage: ");
   fprintf(stdout, "%s [options] <pattern> [file]...\n\n", g_program_name);
   fprintf(stdout, " Options are:\n");
   fprintf(stdout, "  -c, --color <name|number>\tcolor to highlight in\n");
-  fprintf(stdout, "  -s, --style <name>\t\tstyle to apply to highlight, if any styles are \n\t\t\t\tused then the color will not be implicitly \n\t\t\t\tbolded, you must bold it your self\n");
+  fprintf(stdout, "  -s, --style <name>\t\tstyle to apply to highlight, if any styles are \n\t\t\t\tused then the color will not be implicitly \n\t\t\t\tbolded, you must bold it yourself\n");
   fprintf(stdout, "  -E, --extended \t\tuse extended regular expressions\n");
-  fprintf(stdout, "  -f, --force \t\t\tforce hilighting even if stdout is not a tty\n");
+  fprintf(stdout, "  -f, --force \t\t\tforce highlighting even if stdout is not a tty\n");
   fprintf(stdout, "  -i, --ignore-case \t\tguess what this one does\n");
   fprintf(stdout, "      --debug\t\t\tprint debugging info\n");
   fprintf(stdout, "      --help\t\t\tdisplay this help and exit\n");
@@ -288,7 +288,7 @@ void parse_args( int argc, char **argv )
         break;
 
       case 'f':
-        // force hilighting
+        // force highlighting
         do_work = histring;
         dprintf((stderr, "force ouput\n"));
         break;
@@ -336,7 +336,7 @@ void parse_args( int argc, char **argv )
       break;
 
       case 'H':
-        print_useage();
+        print_usage();
         exit(0);
         break;
 
@@ -446,7 +446,7 @@ int main(int argc, char **argv)
 
   g_program_name = argv[0];
 
-  // use hilighting by default
+  // use highlighting by default
   do_work = histring;
   if(!isatty(1))
   {
