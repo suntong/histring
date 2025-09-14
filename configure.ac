@@ -1,6 +1,7 @@
 
 dnl Process this file with autoconf to produce a configure script.
-AC_INIT(histring.c)
+AC_INIT
+AC_CONFIG_SRCDIR([histring.c])
 AM_CONFIG_HEADER(config.h)
 AM_INIT_AUTOMAKE(histring,1.1.0)
 
@@ -59,4 +60,5 @@ AC_ARG_ENABLE(debug,
 AC_SUBST(EXTRASRC)
 AC_SUBST(EXTRAOBJ)
 
-AC_OUTPUT(Makefile)
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT
